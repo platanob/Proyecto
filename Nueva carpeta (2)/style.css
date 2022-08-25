@@ -264,8 +264,13 @@ form>button {
     cursor: pointer;
     border-radius: 10px;
 }
-
+/*le coloco margen para al footer y cambio color de las letras y centro el texto al centro */
 footer {
     color: thistle;
     text-align: center;
+    margin: 30px;
+}
+/*Le coloco ancho a las imagenes del footer*/
+footer img{
+    width: 40px;
 }
