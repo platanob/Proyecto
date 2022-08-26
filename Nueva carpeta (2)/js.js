@@ -7,3 +7,9 @@ function fun() {
         "Tu email es:" + email + "\n" +
         "Tu mensaje: " + msj);
 }
+
+const contacto = document.getElementById("formulario")
+
+contacto.addEventListener("click", () => {
+    fun()
+})

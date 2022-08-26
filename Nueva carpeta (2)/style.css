@@ -162,10 +162,9 @@ nav>ul>li>ul>li>a:hover {
 
 /* Inicio */
 
-
 #inicio-a {
     font-size: 13px;
-    margin-top: 152px;
+    margin-top: 134px;
     width: 100%;
     padding: 25px 150px 0px 15%;
     display: flex;
@@ -190,18 +189,22 @@ nav>ul>li>ul>li>a:hover {
     /* lo alejamos de arriba y de los costados */
     padding: 100px 250px;
     background-color: white;
+}
 
+#box {
+    width: 70%;
+    margin-left: 15%;
+    box-sizing: border-box;
+    background-color: rgb(210, 210, 210);
+    box-shadow: 5px 5px 8px rgb(133, 133, 134);
+    padding: 50px;
 }
 
 #inicio-c {
     text-align: center;
     /* lo alejamos de arriba y de los costados */
     padding: 100px 250px;
-    /* background-color: white; */
-
 }
-
-
 
 button {
     padding: 15px;
@@ -264,16 +267,19 @@ form>button {
     cursor: pointer;
     border-radius: 10px;
 }
+
 /*le coloco margen para al footer y cambio color de las letras y centro el texto al centro */
 footer {
     color: thistle;
     text-align: center;
     margin: 30px;
 }
+
 /*Le coloco ancho a las imagenes del footer*/
-footer img{
+footer img {
     width: 40px;
 }
+
 #mps {
     width: 80%;
     margin: 10%;
