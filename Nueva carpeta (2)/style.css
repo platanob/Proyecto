@@ -274,3 +274,8 @@ footer {
 footer img{
     width: 40px;
 }
+#mps {
+    width: 80%;
+    margin: 10%;
+    text-align: center;
+}
