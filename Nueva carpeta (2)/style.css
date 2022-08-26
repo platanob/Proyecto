@@ -281,7 +281,7 @@ footer img {
 }
 
 /*Ajustamos el main de producto y servicio*/
-#mps {           
+#mps {
     width: 80%;
     margin: 10%;
     text-align: center;
@@ -293,27 +293,51 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+
 /*Modificacion de cada elemento de la tabla  */
 td,
 th {
-    border:solid;
+    border: solid;
     text-align: left;
     padding: 8px;
 }
+
 /*Ajuste del main de equipo*/
-#mq {           
+#mq {
     width: 90%;
     margin: 10%;
     text-align: center;
 }
+
 /*ajuste del div del main de pagina equipo*/
-#mq div{
-    display:inline-block;
+#mq div {
+    display: inline-block;
     width: 40%;
-    margin:4%;
+    margin: 4%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#mq div p,h3{
-    margin: 10px;
 
+#mq div p,
+h3 {
+    margin: 10px;
+}
+
+/* Ajustes de historia */
+
+#thistoria {
+    width: 40%;
+    margin-top: 162px;
+    margin-left: 30%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#artih,
+p {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
+    padding: 10px;
+    text-align: center;
 }
