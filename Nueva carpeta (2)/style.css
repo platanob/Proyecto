@@ -189,6 +189,9 @@ nav>ul>li>ul>li>a:hover {
     /* lo alejamos de arriba y de los costados */
     padding: 100px 250px;
     background-color: white;
+    background-image: url('/img/f2.jpg');
+    background-size: cover;
+    
 }
 
 #box {
@@ -314,7 +317,7 @@ th {
     display: inline-block;
     width: 40%;
     margin: 4%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #mq div p,
