@@ -280,23 +280,40 @@ footer img {
     width: 40px;
 }
 
-/*Ajustamos el main*/
-#mps {
+/*Ajustamos el main de producto y servicio*/
+#mps {           
     width: 80%;
     margin: 10%;
     text-align: center;
 }
 
-/*Le colocamos bordes a la tabla y cada elemento*/
+/*Modificacon de la tabla */
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
-
+/*Modificacion de cada elemento de la tabla  */
 td,
 th {
-    border: 1px solid;
+    border:solid;
     text-align: left;
     padding: 8px;
+}
+/*Ajuste del main de equipo*/
+#mq {           
+    width: 90%;
+    margin: 10%;
+    text-align: center;
+}
+/*ajuste del div del main de pagina equipo*/
+#mq div{
+    display:inline-block;
+    width: 40%;
+    margin:4%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mq div p,h3{
+    margin: 10px;
+
 }
