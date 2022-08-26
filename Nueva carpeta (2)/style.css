@@ -280,8 +280,23 @@ footer img {
     width: 40px;
 }
 
+/*Ajustamos el main*/
 #mps {
     width: 80%;
     margin: 10%;
     text-align: center;
+}
+
+/*Le colocamos bordes a la tabla y cada elemento*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
 }
