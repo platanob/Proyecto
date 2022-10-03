@@ -256,7 +256,8 @@ form {
 }
 
 form input,
-form textarea {
+form textarea ,
+form select{
     border: 0;
     margin: 10px 0;
     padding: 20px;

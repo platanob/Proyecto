@@ -42,7 +42,12 @@
             <form>
                 <input id="nombre" placeholder="Nombre" required>
                 <input type="email" id="email" placeholder="Email" required>
-                <textarea id="mensaje" rows="4" placeholder="Comentario" required></textarea>
+                <select id="producto"name="Producto">
+                    <option>Creacion de pagina web</option>
+                    <option>Mantencion de pagina y actualizacion</option>
+                    <option>Verificacion de de seguridad de paginas</option>
+                </select>
+                <textarea id="mensaje" rows="4" placeholder="Comentario" maxlength="300" required></textarea>
                 <button class="btncontacto" id="formulario" type="submit" >Enviar</button>
             </form>
         </div>
