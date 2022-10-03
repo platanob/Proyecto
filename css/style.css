@@ -119,6 +119,7 @@ nav>ul>li>a:hover {
     transform: scale(1.1);
     background: #4b4d50;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+
 }
 
 /* Menu desplegable */
@@ -134,11 +135,14 @@ nav>ul>li>ul {
     /* Lo ponemos encima de todo */
     z-index: auto;
     border-radius: 10px;
+    opacity: 0%;
+    transition: 1s;
 }
 
 nav>ul>li:hover>ul {
     visibility: visible;
     top: 50px;
+    opacity: 100%;
 }
 
 nav>ul>li>ul>li>a {
