@@ -1,7 +1,7 @@
 <?php
 
 //importamos las variables de conexion 
-include_once 'config.php';
+include_once 'cfg.php';
 
 //creamos conexion
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,7 +19,7 @@ $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono'];
 $idpro = $_POST['producto'];
 //Insertamos la informacion a la base de datos
-$sql = "INSERT INTO pedidos(nombre, correo, comentario,telefono,id_producto) VALUES ('$nombre', '$email', '$comentario', '$telefono', '$idpro')";
+$sql = "INSERT INTO pedidos(nombre, correo, comentario,telefono,id_producto) VALUES ('$nombre', '$correo', '$mensaje', '$telefono', '$idpro')";
 $result = $conn->query($sql);
 
 $response = array();
