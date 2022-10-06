@@ -17,7 +17,7 @@ $nombre = $_POST['nombre'];
 $correo = $_POST['email'];
 $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono'];
-$idpro = $_POST['prodcuto'];
+$idpro = $_POST['producto'];
 //Insertamos la informacion a la base de datos
 $sql = "INSERT INTO pedidos(nombre, correo, comentario,telefono,id_producto) VALUES ('$nombre', '$email', '$comentario', '$telefono', '$idpro')";
 $result = $conn->query($sql);

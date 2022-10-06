@@ -1,7 +1,7 @@
 async function enviarFormulario(datosFormulario) {
     const response = await fetch('conn.php', {
         method: 'POST',
-        body: datosFormulario,
+        body: datosFormulario
     });
 
     const respuesta = await response.text();
