@@ -39,16 +39,18 @@
             <h2>Pedido</h2>
         </div>
         <div id="contacto">
-            <form>
-                <input id="nombre" placeholder="Nombre" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <select id="producto"name="Producto">
+            <form method="post" action="conn.php">
+                <input id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="number" name="telefono" id="tel" max="999999999" placeholder="Numero Telefonico" required>
+                <select id="producto" name="producto">
                     <option>Creacion de pagina web</option>
                     <option>Mantencion de pagina y actualizacion</option>
                     <option>Verificacion de de seguridad de paginas</option>
                 </select>
-                <textarea id="mensaje" rows="4" placeholder="Comentario" maxlength="300" required></textarea>
-                <button class="btncontacto" id="formulario" type="submit" >Enviar</button>
+                <textarea id="mensaje" rows="4" name="mensaje" placeholder="Comentario" maxlength="300"
+                    required></textarea>
+                <button class="btncontacto" id="formulario" type="submit" value="enviar">Enviar</button>
             </form>
         </div>
     </main>

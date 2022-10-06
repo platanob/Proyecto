@@ -10,7 +10,7 @@ function fun() {
         "Tu mensaje: " + msj);
 }
 
-const contacto = document.getElementById("formulario")
+const contacto = document.getElementById("formulario");
 
 contacto.addEventListener("click", () => {
     fun()
