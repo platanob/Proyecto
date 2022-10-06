@@ -1,7 +1,6 @@
 <?php
-
 //importamos las variables de conexion 
-include_once 'config.php';
+include_once 'cfg.php';
 
 //creamos conexion
 $conn = new mysqli($servername, $username, $password, $dbname);
