@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="arriba">
+            <div class="logo">
+                <a href="./index.php"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="todo_menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.php"></a></li>
+                        <li><a href="./PS.php">Productos y Servicios</a></li>
+                        <li><a href="#">Quienes somos</a>
+                            <ul>
+                                <li><a href="./hitorial.php">Historia</a></li>
+                                <li><a href="./equipo.php">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contacto.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="mq">
+        <article>
+            <h1>Equipo</h1>
+            <div>
+                <h3>Benjamin Isaac Carrasco Mendez</h3>
+                <br>
+                <p>Mis estudios son ingeniereia civil en informatica , tambien estudio ingeniereia civil industrial.
+                    soy de un pueblo llamado traiguen que queda a una hora imedia de temuco.
+                    me considero una persona tranquila y optomista siempre en busca de nuevos retos
+                    asi que si quieres alguien con quien trabajar soy alguien a considerar.
+                </p>
+            </div>
+            <div>
+                <h3>Juan Claudio Cárdenas Uribe</h3>
+                <br>
+                <p>Solo estudio ingeniería civil en informática, soy de un pueblo llamado de Puerto Aysén, de la XI
+                    región, ahora
+                    mismo estoy viviendo el Lautaro que está a media hora de la Universidad Católica de Temuco.
+                    Me considero alguien normal, quien le gusta más la tranquilidad que otra cosa, a pesar de que me
+                    gusta mi zona de confort a veces me gusta salir e intentar cosas más difíciles.
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="pabajo">
+            <h3>#Proyecto Desarrolo Web#</h3>
+            <p>Siguenos en las redes sociales:</p>
+            <br>
+            <a href="https://www.facebook.com"><img src="../img/faceb.png" alt="none"></a>
+            <a href="https://www.instagram.com"><img src="../img/insta.png" alt="none"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

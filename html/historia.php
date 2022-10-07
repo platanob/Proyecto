@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="arriba">
+            <div class="logo">
+                <a href="./index.php"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="todo_menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.php"></a></li>
+                        <li><a href="./PS.php">Productos y Servicios</a></li>
+                        <li><a href="#">Quienes somos</a>
+                            <ul>
+                                <li><a href="./hitorial.php">Historia</a></li>
+                                <li><a href="./equipo.php">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contacto.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="thistoria">
+            <h2>Historia</h2>
+        </div>
+        <article id="artih">
+            <p class="pa">
+                La empresa se empieza a desarrollar en la época de la universidad, comenzó como un proyecto para la
+                universidad. En enero del 2004 lanzó LOGO como un creador de sitios web para el público con un fondo
+                inicial que le dio su padre, junto con una pequeña subvención de la universidad que consiguió
+                participando en un programa para su universidad. En este momento él era el único desarrollador y
+                empleado
+                de su empresa y él trabajaba desde su dormitorio.</p>
+            <p class="pa">Cuando se graduó después de 3 años, LOGO estaba generando altos ingresos anuales, se mudó a
+                una ciudad
+                mejor y comenzó a contratar gente para su empresa, después de 3 más, en el 2010, ya tenía 30 empleados.
+                Ese año, LOGO recibió un ingreso anual de $50 millones, en su primera ronda de financiación de capital
+                de
+                riesgo, permitiendo contratar más personal, continuar desarrollando su software y duplicar el
+                presupuesto de marketing.</p>
+            <p class="pa">
+                Después LOGO en el 2015 compró espacios publicitarios en eventos importantes, desde conciertos hasta
+                eventos deportivos como mundiales tanto de futbol y basquetbol, en el 2017 recibió el premio Emmy por
+                Comercial Destacado ese mismo año firmó un contrato de patrocinio con un reconocido equipo para agregar
+                su logotipo a sus uniformes.
+            </p>
+            <p class="pa">
+                A principios del 2021, la compañía presentó documentos ante la Comisión de Bolsa y Valores de EE.UU.
+                para cotizar en la bolsa a través de la cotización directa en la Bolsa de Nueva York. En marzo de 2021,
+                LOGO
+                recaudo 300 millones de dólares en una ronda de financiación dirigida por grandes empresas con la
+                participación de inversores existentes. Esta ronda de financiación valoró a la empresa en 10.000
+                millones
+                de dólares.
+            </p>
+        </article>
+    </main>
+    <footer>
+        <div id="pabajo">
+            <h3>#Proyecto Desarrolo Web#</h3>
+            <p>Siguenos en las redes sociales:</p>
+            <br>
+            <a href="https://www.facebook.com"><img src="../img/faceb.png" alt="none"></a>
+            <a href="https://www.instagram.com"><img src="../img/insta.png" alt="none"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

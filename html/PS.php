@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="arriba">
+            <div class="logo">
+                <a href="./index.php"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="todo_menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.php"></a></li>
+                        <li><a href="./PS.php">Productos y Servicios</a></li>
+                        <li><a href="#">Quienes somos</a>
+                            <ul>
+                                <li><a href="./hitorial.php">Historia</a></li>
+                                <li><a href="./equipo.php">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contacto.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <main id="mps">
+        <article>
+            <h1>Productos y Servicios</h1>
+            <br>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th>Productos y Servicios</th>
+                    <th>Tiempo</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Creacion de pagina web</td>
+                    <td>5-15 Dias</td>
+                    <td>$40.000</td>
+                </tr>
+                <tr>
+                    <td>mantencion de pagina y actualizacion</td>
+                    <td>2-5 Dias</td>
+                    <td>$50.000 Al año</td>
+                </tr>
+                <tr>
+                    <td>verificacion de de seguridad de paginas </td>
+                    <td>5 - 10 Dias</td>
+                    <td>$25.000 </td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <div id="pabajo">
+            <h3>#Proyecto Desarrolo Web#</h3>
+            <p>Siguenos en las redes sociales:</p>
+            <br>
+            <a href="https://www.facebook.com"><img src="../img/faceb.png" alt="none"></a>
+            <a href="https://www.instagram.com"><img src="../img/insta.png" alt="none"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

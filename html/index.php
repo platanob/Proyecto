@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="arriba">
+            <div class="logo">
+                <a href="./index.php"><img src="../img/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="todo_menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.php"></a></li>
+                        <li><a href="./PS.php">Productos y Servicios</a></li>
+                        <li><a href="#">Quienes somos</a>
+                            <ul>
+                                <li><a href="./hitorial.php">Historia</a></li>
+                                <li><a href="./equipo.php">Equipo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./contacto.php">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="inicio-a">
+            <h2>Prefierenos a nosotros<br>Ahora ya!</h2>
+            <button><a href="./contacto.php" target="_blank">Contactanos</a></button>
+        </section>
+        <section id="inicio-b">
+            <div id="box">
+                <h2>Un poco de nosotros</h2>
+                <p>La empresa se empieza a desarrollar en la época de la universidad, comenzó como un proyecto, pero
+                    termino
+                    siendo LOGO la mejor empresa para los servicio de creación de páginas web. En enero de 2004 se lanzó
+                    oficialmente y tan solo 3 años después ya estaba generando ingresos anuales de miles millones de
+                    dólares.
+                </p>
+                <button><a href=".//hitorial.php" target="_blank">Más información aquí</a></button>
+            </div>
+        </section>
+        <section id="inicio-c">
+            <h2>Proyectos</h2>
+            <p>Aquí van los "proyectos"</p>
+            <button><a href="./PS.php" target="_blank">Más información aquí</a></button>
+        </section>
+    </main>
+    <footer>
+        <div id="pabajo">
+            <h3>#Proyecto Desarrolo Web#</h3>
+            <p>Siguenos en las redes sociales:</p>
+            <br>
+            <a href="https://www.facebook.com"><img src="../img/faceb.png" alt="none"></a>
+            <a href="https://www.instagram.com"><img src="../img/insta.png" alt="none"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
