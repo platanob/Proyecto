@@ -12,6 +12,7 @@ if ($conn->connect_error) {
 }
 
 //Recimos la informacion
+
 $nombre = $_POST['nombre'];
 $correo = $_POST['email'];
 $mensaje = $_POST['mensaje'];
@@ -25,10 +26,13 @@ $response = array();
 
 if ($result) {
     $response['success'] = "exito";
+    http_response_code(404);
     exit(json_encode($response));
 } else {
     $response['error'] = "error: " . $conn->error;
+    http_response_code(200);
     exit(json_encode($response));
 }
 
 $conn->close();
+?>
