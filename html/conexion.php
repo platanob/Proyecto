@@ -19,7 +19,7 @@ $mensaje = $_POST['mensaje'];
 $telefono = $_POST['telefono'];
 $idpro = $_POST['producto'];
 //Insertamos la informacion a la base de datos
-$sql = "INSERT INTO pedidos(nombre, correo, comentario,telefono,id_producto) VALUES ('$nombre', '$correo', '$mensaje', '$telefono', '$idpro')";
+$sql = "INSERT INTO pedidos(nombre, correo, comentario,telefono,id_producto) VALUES ('$nombre', '$correo', '$mensaje', $telefono, '$idpro')";
 $result = $conn->query($sql);
 
 $response = array();
@@ -33,6 +33,3 @@ if ($result) {
     http_response_code(200);
     exit(json_encode($response));
 }
-
-$conn->close();
-?>

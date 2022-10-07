@@ -6,7 +6,6 @@ async function enviarFormulario(datosFormulario) {
 
     const respuesta = await response.text();
     const obj = JSON.parse(respuesta);
-    alert("su conexion es : "+obj.success+"\ncodigo:"+response.status) 
+    alert("su conexion es : " + obj.success + "\ncodigo:" + response.status)
     document.getElementById('respuesta').innerHTML = obj.success;
 }
-// 
