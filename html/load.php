@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 
 
 $salida = "";
-$query = "SELECT * FROM pedidos";
+$query = "SELECT id_pedido,nombre,correo,comentario,telefono,id_producto FROM pedidos WHERE correo LIKE '%' ORDER BY `pedidos`.`id_pedido` DESC";
 
 if (isset($_POST['consulta'])) {
     $q = $conn->real_escape_string($_POST['consulta']);
@@ -39,7 +39,7 @@ if ($resultado->num_rows > 0) {
         <td>" . $fila['correo'] . "</td>
         <td>" . $fila['comentario'] . "</td>
         <td>" . $fila['telefono'] . "</td>
-        <td>" . $fila['id'] . "</td>
+        <td>" . $fila['id_producto'] . "</td>
         </tr>";
     }
     $salida .= "</tbody></table>";
