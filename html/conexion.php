@@ -26,10 +26,10 @@ $response = array();
 
 if ($result) {
     $response['success'] = "exito";
-    http_response_code(404);
+    http_response_code(200);
     exit(json_encode($response));
 } else {
     $response['error'] = "error: " . $conn->error;
-    http_response_code(200);
+    http_response_code(412);
     exit(json_encode($response));
 }
