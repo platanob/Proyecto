@@ -47,3 +47,6 @@ if ($resultado->num_rows > 0) {
     $salida .= "No hay datos";
 }
 echo $salida;
+
+// <td><button>Editar</button></td>
+// <td><button>Borrar</button></td>
