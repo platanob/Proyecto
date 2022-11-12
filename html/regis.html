@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo</title>
+    <title>login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../java/registro.js"></script>
     <script src="../java/cerrar.js"></script>
 </head>
-
 <body>
     <header>
         <div class="arriba">
@@ -40,29 +39,17 @@
             </div>
         </div>
     </header>
-    <main id="mq">
-        <article>
-            <h1>Equipo</h1>
-            <div>
-                <h3>Benjamin Isaac Carrasco Mendez</h3>
-                <br>
-                <p>Mis estudios son ingeniereia civil en informatica , tambien estudio ingeniereia civil industrial.
-                    soy de un pueblo llamado traiguen que queda a una hora imedia de temuco.
-                    me considero una persona tranquila y optomista siempre en busca de nuevos retos
-                    asi que si quieres alguien con quien trabajar soy alguien a considerar.
-                </p>
-            </div>
-            <div>
-                <h3>Juan Claudio Cárdenas Uribe</h3>
-                <br>
-                <p>Solo estudio ingeniería civil en informática, soy de un pueblo llamado de Puerto Aysén, de la XI
-                    región, ahora
-                    mismo estoy viviendo el Lautaro que está a media hora de la Universidad Católica de Temuco.
-                    Me considero alguien normal, quien le gusta más la tranquilidad que otra cosa, a pesar de que me
-                    gusta mi zona de confort a veces me gusta salir e intentar cosas más difíciles.
-                </p>
-            </div>
-        </article>
+    <main>
+        <div class="logi">
+            <h2>Registro</h2>
+            <form action="" method="post" id="formulario_registro">
+                <input type="text" placeholder="usuario" id="usuario" name="usuario" required>
+                <input type="password" placeholder="contraseña" id="contra" name="contra"required>
+                <input type="email" placeholder="correo" id="correo" name="correo" required>
+                <button type="submit">Registrarse</button> 
+                <a href="../html/login.html">login</a>
+            </form>
+        </div>
     </main>
     <footer>
         <div id="pabajo">
@@ -74,5 +61,5 @@
         </div>
     </footer>
 </body>
-
+<script src="../java/registro.js"></script>
 </html>
