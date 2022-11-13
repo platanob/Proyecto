@@ -2,16 +2,19 @@
 
 require 'cfg.php';
 
+$usuario = $_POST['usuario'];
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 session_start();
-$_SESSION['usuario'];
+$_SESSION['usuario'] = $usuario;
 
 $salida = "";
-$query = "SELECT * FROM pedidos, usuario_dw WHERE nombre = 'usuario1' and usuario = 'usuario1'";
+$query = "SELECT * FROM pedidos, usuario_dw WHERE nombre = '$usuario' and usuario = '$usuario'";
 
 if (isset($_POST['consulta'])) {
     $q = $conn->real_escape_string($_POST['consulta']);
