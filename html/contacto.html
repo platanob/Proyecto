@@ -13,6 +13,7 @@
     <script src="../java/muestra.js"></script>
     <script src="../java/cerrar.js"></script>
     <script src="../java/ses_ini.js"></script>
+    <script src="../java/editar.js"></script>
     <script src="../java/borrar.js"></script>
 </head>
 
@@ -66,6 +67,19 @@
                 <button class="btncontacto" type="submit" id="btn" id="submit" value="Enviar">Enviar</button>
             </form>
         </div>
+        <h1>editar</h1>
+        <form action="" id="formulario2" method="post">
+            <input id="ID" name="ID" placeholder="ID" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="number" name="telefono" id="telefono" max="999999999" placeholder="Numero Telefonico" required>
+            <select id="producto" name="producto" id="producto">
+                <option name="producto" value="1">Creacion de pagina web</option>
+                <option name="producto" value="2">Mantencion de pagina y actualizacion</option>
+                <option name="producto" value="3">Verificacion de de seguridad de paginas</option>
+            </select>
+            <textarea id="mensaje" rows="4" name="mensaje" placeholder="Comentario" maxlength="300" required></textarea>
+            <button class="btncontacto" type="submit" id="btn" id="submit" value="Enviar">Enviar</button>
+        </form>
         <div id="busqueda">
             <h2>busqueda atraves del correo</h2>
             <label for="caja_busqueda"></label>
@@ -96,6 +110,8 @@
     <script src="../java/js.js"></script>
     <script src="../java/muestra.js"></script>
     <script src="../java/borrar.js"></script>
+    <script src="../java/variables2.js"></script>
+    <script src="../java/editar.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
