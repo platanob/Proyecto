@@ -18,7 +18,7 @@ $query = "SELECT * FROM pedidos, usuario_dw WHERE nombre = '$usuario' and usuari
 if (isset($_POST['consulta'])) {
     $q = $conn->real_escape_string($_POST['consulta']);
     $query = "SELECT id_pedido,nombre,correo,comentario,telefono,id_producto FROM pedidos
-WHERE correo LIKE '" . $q . "%'";
+WHERE correo LIKE '" . $q . "%' and `pedidos`.`nombre` = '$usuario'";
 }
 
 $resultado = $conn->query($query);
