@@ -1,6 +1,9 @@
 <?php
 
 require 'cfg.php';
+session_start();
+$usuario = $_SESSION['usuario'];
+
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -10,7 +13,7 @@ if ($conn->connect_error) {
 
 
 $salida = "";
-$query = "SELECT id_pedido,nombre,correo,comentario,telefono,id_producto FROM pedidos WHERE correo LIKE '%' ORDER BY `pedidos`.`id_pedido` DESC";
+$query = "SELECT * FROM pedidos, usuario_dw WHERE nombre = '$usuario' and usuario = '$usuario'";
 
 if (isset($_POST['consulta'])) {
     $q = $conn->real_escape_string($_POST['consulta']);
