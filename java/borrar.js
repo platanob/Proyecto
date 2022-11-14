@@ -1,4 +1,4 @@
-async function enviarFormulario(datosFormulario) {
+async function borrar(datosFormulario) {
     const response = await fetch('../html/borrar.php', {
         method: 'POST',
         body: datosFormulario

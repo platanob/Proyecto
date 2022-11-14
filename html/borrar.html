@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script src="../java/variables2.js"></script>
+    <script src="../java/variables3.js"></script>
     <script src="../java/muestra.js"></script>
 
-    <script src="../java/editar.js"></script>
+    <script src="../java/borrar.js"></script>
 </head>
 
 <body>
@@ -50,28 +50,18 @@
         <main>
 
             <div style="margin-top: 200px;"></div>
-            <h1 id="h1">editar</h1>
-            <form action="" id="formulario2" method="post">
-                <input id="ID" name="ID" placeholder="ID" required>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="number" name="telefono" id="telefono" max="999999999" placeholder="Numero Telefonico"
-                    required>
-                <select id="producto" name="producto" id="producto">
-                    <option name="producto" value="1">Creacion de pagina web</option>
-                    <option name="producto" value="2">Mantencion de pagina y actualizacion</option>
-                    <option name="producto" value="3">Verificacion de de seguridad de paginas</option>
-                </select>
-                <textarea id="mensaje" rows="4" name="mensaje" placeholder="Comentario" maxlength="300"
-                    required></textarea>
+            <h1 id="h1">borrar</h1>
+            <form action="" method="post" id="form">
+                <input type="text" placeholder="ID a borrar" name="borrar">
                 <button class="btncontacto" type="submit" id="btn" id="submit" value="Enviar">Enviar</button>
             </form>
             <button><a href="../html/contacto.html">Regresar</a></button>
             <div id="datos"></div>
         </main>
-        <script src="../java/variables2.js"></script>
+        <script src="../java/variables3.js"></script>
         <script src="../java/muestra.js"></script>
 
-        <script src="../java/editar.js"></script>
+        <script src="../java/borrar.js"></script>
     </body>
 
 </html>

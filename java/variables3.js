@@ -4,5 +4,5 @@ document
         event.preventDefault();
         const formulario = document.getElementById('form');
         const formularioData = new FormData(formulario);
-        enviarFormulario(formularioData);
+        borrar(formularioData);
     });

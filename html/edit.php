@@ -3,6 +3,7 @@
 require 'cfg.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 session_start();
 $usuario = $_SESSION['usuario'];
 if ($conn->connect_error) {

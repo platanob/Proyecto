@@ -12,8 +12,7 @@ if ($conn->connect_error) {
 }
 $ID = $_POST['borrar'];
 
-$sql = "DELETE FROM `pedidos` WHERE `pedidos`.`id_pedido`= $ID and `pedidos`.`nombre` = '$usuario'";
-
+$sql = "DELETE FROM `pedidos` WHERE `id_pedido`= '$ID' and `nombre` = '$usuario'";
 
 $result = $conn->query($sql);
 
@@ -28,5 +27,4 @@ if ($result) {
     http_response_code(412);
     exit(json_encode($response));
 }
-
 // <!-- DELETE FROM `pedidos` WHERE `pedidos`.`id_pedido` = 30 -->
