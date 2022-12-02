@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios</title>
+    <%- include('partials/head') %>
+        <script src="../java/cerrar.js"></script>
+</head>
+
+<body class="bg-secondary">
+    <%- include('partials/nav') %>
+        <br>
+        <br>
+        <main id="mps">
+            <article>
+                <h1>Productos y Servicios</h1>
+                <br>
+                <br>
+                <br>
+                <table class="table table-striped table-dark">
+                    <tr>
+                        <th scope="col">Productos y Servicios</th>
+                        <th scope="col">Tiempo</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Creacion de pagina web</td>
+                        <td>5-15 Dias</td>
+                        <td>$40.000</td>
+                    </tr>
+                    <tr>
+                        <td>mantencion de pagina y actualizacion</td>
+                        <td>2-5 Dias</td>
+                        <td>$50.000 Al año</td>
+                    </tr>
+                    <tr>
+                        <td>verificacion de de seguridad de paginas </td>
+                        <td>5 - 10 Dias</td>
+                        <td>$25.000 </td>
+                    </tr>
+                </table>
+            </article>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+
+</html>

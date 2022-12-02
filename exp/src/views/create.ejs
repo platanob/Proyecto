@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contancto</title>
+    <%- include('partials/head') %>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-secondary">
+    <%- include('partials/nav') %>
+        <main>
+            <div id="titulo-contacto">
+                <h2>Nuevo Pedido</h2>
+            </div>
+        </main>
+        <div class="container d-flex justify-content-center">
+            <form action="/save" method="POST">
+                <div class="mb-3">
+                    <label for="user" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="user" name="user" tabindex="1">
+                </div>
+                <label for="user" class="form-input">Email</label>
+                <input type="email" class="form-input" name="email" id="email" placeholder="Email" required>
+                <label for="user">Telefono</label>
+                <input type="number" name="telefono" id="telefono" max="999999999" class="form-input"
+                    placeholder="Numero Telefonico" required>
+                <div class="mb-3">
+                    <label for="user" class="form-label">Producto</label>
+                    <select name="product" id="product" class="form-select">
+                        <option name="producto" value="1">Creacion de pagina web</option>
+                        <option name="producto" value="2">Mantencion de pagina y actualizacion</option>
+                        <option name="producto" value="3">Verificacion de de seguridad de paginas</option>
+                    </select>
+                    <label for="user">Comentario</label>
+                    <textarea id="mensaje" rows="4" name="mensaje" placeholder="Comentario" maxlength="300"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btnC btn btn-success" tabindex="5">Guardar</button>
+                <a href="/contacto" class="btnC btn btn-danger">Cancelar</a>
+            </form>
+        </div>
+
+        <%- include('partials/footer') %>
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+                integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</body>
+
+</html>
