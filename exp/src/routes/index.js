@@ -24,7 +24,8 @@ router.get("/equipo", (req, res) => res.render('equipo'))
 // Muestra la tabla en contacto
 router.get("/contacto", (req, res) => { 
     if (req.session.loggedin) {
-    conexion.query('SELECT * FROM pedidos' , (error, results) => {
+        const usuario = req.session.usuario
+    conexion.query('SELECT * FROM pedidos where nombre =  ?',usuario , (error, results) => {
         if (error) {
             console.log(error);
         } else {
@@ -42,6 +43,7 @@ router.get("/create", (req, res) => {
         res.redirect('login')
     }
 })
+
 router.get("/edit/:id_pedido", (req, res) => {
     if(req.session.loggedin){
     const id_pedido = req.params.id_pedido;
@@ -81,9 +83,8 @@ router.post("/login",(req,res)=>{
             if(result){
                 req.session.loggedin = true ;
                 req.session.usuarioid = results[0].id_usuario;
-                req.session.usuario = results[0].usario;
+                req.session.usuario = results[0].usuario;
                 req.session.email = results[0].email ;
-                console.log(req.session.email)
                 res.redirect('/')
             }
             else{

@@ -22,14 +22,14 @@
         <% if (user){ %>
             <div class="container d-flex justify-content-center">
                 <form action="/update" method="POST">
-                    <input id="id" name="id" value="<%= user.id_pedido %>">
+                    <input id="id" name="id" value="<%= user.id_pedido %>" readonly>
                     <div class="mb-3">
-                        <label for="user" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="user" name="user" value="<%= user.nombre %>">
+                        <label for="user" class="form-label">Nombre</label >
+                        <input type="text" class="form-control" id="user" name="user" value="<%= user.nombre %>" readonly>
                     </div>
                     <label for="user" class="form-input">Email</label>
                     <input type="email" class="form-input" name="email" id="email" placeholder="Email"
-                        value="<%= user.correo%>" required>
+                        value="<%= user.correo%>" readonly>
                     <label for="user">Telefono</label>
                     <input type="number" name="telefono" id="telefono" value="<%= user.telefono %>" max="999999999"
                         class="form-input" placeholder="Numero Telefonico" required>
