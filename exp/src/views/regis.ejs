@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <%- include('partials/head') %>
+        <script src="../java/cerrar.js"></script>
+</head>
+<body class="bg-secondary">
+<%- include('partials/nav') %>
+    <main>
+        <div class="logi">
+            <h2>Registro</h2>
+            <form action="" method="post" id="formulario_registro">
+                <input type="text" placeholder="usuario" id="usuario" name="usuario" required>
+                <input type="password" placeholder="contraseña" id="contra" name="contra"required>
+                <input type="email" placeholder="correo" id="correo" name="correo" required>
+                <button type="submit">Registrarse</button> 
+                <br>
+                <a href="../login">login</a>
+            </form>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+<script src="../java/registro.js"></script>
+</html>
