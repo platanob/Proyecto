@@ -22,10 +22,11 @@
         <% if (user){ %>
             <div class="container d-flex justify-content-center">
                 <form action="/update" method="POST">
-                    <input id="id" name="id" value="<%= user.id_pedido %>" readonly>
+                    <input id="id" name="id" value="<%= user.id_pedido %>" readonly hidden>
                     <div class="mb-3">
-                        <label for="user" class="form-label">Nombre</label >
-                        <input type="text" class="form-control" id="user" name="user" value="<%= user.nombre %>" readonly>
+                        <label for="user" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="user" name="user" value="<%= user.nombre %>"
+                            readonly>
                     </div>
                     <label for="user" class="form-input">Email</label>
                     <input type="email" class="form-input" name="email" id="email" placeholder="Email"

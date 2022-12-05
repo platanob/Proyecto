@@ -17,9 +17,12 @@
                 <form action="" id="inicio_sesion" method="post">
                     <input type="text" placeholder="usuario" id="usuario" name="usuario" required>
                     <input type="password" placeholder="contraseña" id="contra" name="contra" required>
-                    <button type="submit">iniciar sesion</button>
-                    <br>
-                    <a href="/regis">Registrarse</a>
+                    <% if (error){ %>
+                        <p>Contraseña o Usuario equivocado</p>
+                        <%} %>
+                            <button type="submit">iniciar sesion</button>
+                            <br>
+                            <a href="/regis">Registrarse</a>
                 </form>
             </div>
         </main>

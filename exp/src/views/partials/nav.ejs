@@ -17,10 +17,19 @@
                         </ul>
                     </li>
                     <li><a class="link-light text-decoration-none" href="../contacto">Contacto</a></li>
+
                     <li><a class="link-light text-decoration-none" href="../login">Login</a>
-                        <ul>
-                            <li><a  href="../nologin">cerrar sesion </a></li>
-                        </ul>
+                        <% if (!cosas){ %>
+                            <ul>
+                                <li><a href="../login">iniciar sesion </a></li>
+
+                            </ul>
+                            <%} %>
+                                <% if (cosas){ %>
+                                    <ul>
+                                        <li><a href="../nologin">cerrar sesion </a></li>
+                                    </ul>
+                                    <%} %>
                     </li>
                 </ul>
             </nav>
